@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "func.h"
 int picker(int a, int b) {
 	return a > b ? a : b;
 }
@@ -227,15 +226,15 @@ int main(void) {
 			//pion
 			for (int i = 0; i < 10; i++) {
 				int pion_suma = 0;
-				int ile_blok體 = 0;
+				int ile_blok贸w = 0;
 				for (int j = 0;; j++) {
-					ile_blok體 = j;
+					ile_blok贸w = j;
 					if (pion[i][j] == 0 || pion[i][j] == -1) break;
 					else pion_suma += pion[i][j];
 					if (j != 0) pion_suma++;
 				}
 				if (pion_suma == 10) {
-					for (int k = 0; k < ile_blok體; k++) {
+					for (int k = 0; k < ile_blok贸w; k++) {
 						int how_much = pion[i][k];
 						if (how_much >= 5) {
 							int x=0;
@@ -262,15 +261,15 @@ int main(void) {
 			//poziom
 			for (int i = 0; i < 10; i++) {
 				int poziom_suma = 0;
-				int ile_blok體 = 0;
+				int ile_blok贸w = 0;
 				for (int j = 0;; j++) {
-					ile_blok體 = j;
+					ile_blok贸w = j;
 					if (poziom[i][j] == 0 || poziom[i][j] == -1) break;
 					else poziom_suma += poziom[i][j];
 					if (j != 0) poziom_suma++;
 				}
 				if (poziom_suma == 10) {
-					for (int k = 0; k < ile_blok體; k++) {
+					for (int k = 0; k < ile_blok贸w; k++) {
 						int how_much = poziom[i][k];
 						if (how_much >= 5) {
 							int x = 0;
